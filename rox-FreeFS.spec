@@ -8,6 +8,7 @@ Release:	2
 License:	GPL
 Group:		X11/Applications
 Source0:	http://www.kerofin.demon.co.uk/rox/%{_name}-%{version}.tgz
+# Source0-md5:	709bfca67db8f3330fb8f2da4c6da24a
 Patch0:		%{name}-libxml-includes.patch
 Patch1:		%{name}-paths-fix.patch
 URL:		http://www.kerofin.demon.co.uk/rox/utils.html#freefs
