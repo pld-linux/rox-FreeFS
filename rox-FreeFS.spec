@@ -1,11 +1,10 @@
-%define _appsdir /usr/X11R6/share/ROX-apps
 %define _name FreeFS
 %define _platform %(echo `uname -s`-`uname -m|sed 's/i.86/ix86/'`)
 Summary:	Monitor free space on a file system
 Summary(pl):	ROX-FreeFS monitoruje ilo¶æ wolnej przestrzeni na dysku
 Name:		rox-%{_name}
 Version:	1.3.1
-Release:	1
+Release:	2
 License:	GPL
 Group:		X11/Applications
 Source0:	http://www.kerofin.demon.co.uk/rox/%{_name}-%{version}.tgz
@@ -19,6 +18,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define		_prefix		/usr/X11R6
 %define		_mandir		%{_prefix}/man
+%define   _appsdir  %{_libdir}/ROX-apps
 
 %description
 ROX-FreeFS displays a small window showing the disk usage of a single
