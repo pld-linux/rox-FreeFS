@@ -17,7 +17,7 @@ BuildRequires:	libxml-devel
 BuildRequires:	rox-CLib-devel >= 0.2.2
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
-%define   _appsdir  %{_libdir}/ROX-apps
+%define		_appsdir	%{_libdir}/ROX-apps
 
 %description
 ROX-FreeFS displays a small window showing the disk usage of a single
