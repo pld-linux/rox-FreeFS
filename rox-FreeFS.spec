@@ -12,8 +12,9 @@ Source0:	http://www.kerofin.demon.co.uk/rox/%{_name}-%{version}.tgz
 Patch0:		%{name}-libxml-includes.patch
 Patch1:		%{name}-paths-fix.patch
 URL:		http://www.kerofin.demon.co.uk/rox/utils.html#freefs
-BuildRequires:	rox-CLib >= 0.2.2
 BuildRequires:	libgtop-devel
+BuildRequires:	libxml-devel
+BuildRequires:	rox-CLib-devel >= 0.2.2
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define		_prefix		/usr/X11R6
@@ -39,6 +40,7 @@ pojedynczy system plików.
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{_appsdir}/%{_name}/{Help,%{_platform}}
 
+rm -f ../install
 install App* choice_install gtkrc rox_run $RPM_BUILD_ROOT%{_appsdir}/%{_name}
 install Help/README $RPM_BUILD_ROOT%{_appsdir}/%{_name}/Help
 install %{_platform}/freefs $RPM_BUILD_ROOT%{_appsdir}/%{_name}/%{_platform}
@@ -49,7 +51,7 @@ rm -f install
 
 %files
 %defattr(644,root,root,755)
-%doc Versions
+%doc Help/Versions
 %attr(755,root,root) %{_appsdir}/%{_name}/*[Rr]un
 %attr(755,root,root) %{_appsdir}/%{_name}/choice_install
 %attr(755,root,root) %{_appsdir}/%{_name}/%{_platform}
