@@ -1,0 +1,14 @@
+diff -urN aaa/FreeFS/src/freefs.c FreeFS/src/freefs.c
+--- aaa/FreeFS/src/freefs.c	Mon Apr 29 10:20:04 2002
++++ FreeFS/src/freefs.c	Fri Jun 21 20:46:50 2002
+@@ -41,8 +41,8 @@
+ #include <glibtop/fsusage.h>
+ 
+ #ifdef HAVE_XML
+-#include <tree.h>
+-#include <parser.h>
++#include <libxml/tree.h>
++#include <libxml/parser.h>
+ #endif
+ 
+ #if defined(HAVE_XML) && LIBXML_VERSION>=20400
