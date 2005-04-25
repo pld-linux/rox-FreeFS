@@ -1,0 +1,18 @@
+diff -urN FreeFS.new/libdir FreeFS/libdir
+--- FreeFS.new/libdir	2005-04-24 23:58:30.651108032 +0200
++++ FreeFS/libdir	2005-04-24 23:59:46.904515752 +0200
+@@ -8,12 +8,12 @@
+ # $Id$
+ 
+ if [ x"$LIBDIRPATH" = x ]; then
+-  LIBDIRPATH="$HOME/lib:/usr/local/lib:/usr/lib"
++  LIBDIRPATH="$HOME/lib:/usr/local/lib:/usr/lib:/usr/lib/ROX-apps"
+   export LIBDIRPATH
+ fi
+ 
+ if [ x"$APPDIRPATH" = x ]; then
+-  APPDIRPATH="$HOME/Apps:/usr/local/apps:/usr/apps"
++  APPDIRPATH="$HOME/Apps:/usr/local/apps:/usr/apps:/usr/lib/ROX-apps"
+   export APPDIRPATH
+ fi
+ 
