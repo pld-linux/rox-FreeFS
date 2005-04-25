@@ -1,0 +1,13 @@
+diff -urN FreeFS.new/choice_install FreeFS/choice_install
+--- FreeFS.new/choice_install	2005-04-24 23:58:30.651108032 +0200
++++ FreeFS/choice_install	2005-04-24 23:58:49.327268824 +0200
+@@ -8,8 +8,7 @@
+ 
+ choices_write=`echo $CHOICESPATH | cut -f1 -d:`
+ if [ ! -d $choices_write ]; then
+-    echo $choices_write not found or not a directory
+-    exit 1
++    mkdir $choices_write
+ fi
+ 
+ prog=$1
