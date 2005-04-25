@@ -1,0 +1,33 @@
+diff -urN FreeFS.new/src/freefs.c FreeFS/src/freefs.c
+--- FreeFS.new/src/freefs.c	2005-04-24 23:28:35.095074040 +0200
++++ FreeFS/src/freefs.c	2005-04-24 23:30:09.125779200 +0200
+@@ -53,13 +53,13 @@
+ #include <libxml/tree.h>
+ #include <libxml/parser.h>
+ 
+-#include <rox/rox.h>
+-#include <rox/rox_dnd.h>
+-#include <rox/rox_resources.h>
+-#include <rox/rox_filer_action.h>
+-#include <rox/applet.h>
+-#include <rox/rox_soap.h>
+-#include <rox/rox_soap_server.h>
++#include <ROX-CLib2/rox.h>
++#include <ROX-CLib2/rox_dnd.h>
++#include <ROX-CLib2/rox_resources.h>
++#include <ROX-CLib2/rox_filer_action.h>
++#include <ROX-CLib2/applet.h>
++#include <ROX-CLib2/rox_soap.h>
++#include <ROX-CLib2/rox_soap_server.h>
+ 
+ #define TIP_PRIVATE "For more information see the help file"
+ 
+@@ -166,7 +166,7 @@
+   printf("Distributed under the terms of the GNU General Public License.\n");
+   printf("(See the file COPYING in the Help directory).\n");
+   printf("%s last compiled %s\n", __FILE__, __DATE__);
+-  printf("ROX-CLib version %s for GTK+ %s (built with %d.%d.%d)\n",
++  printf("ROX-CLib2 version %s for GTK+ %s (built with %d.%d.%d)\n",
+ 	 rox_clib_version_string(), rox_clib_gtk_version_string(),
+ 	 ROX_CLIB_VERSION/10000, (ROX_CLIB_VERSION%10000)/100,
+ 	 ROX_CLIB_VERSION%100);
