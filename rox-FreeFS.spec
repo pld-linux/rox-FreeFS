@@ -3,21 +3,21 @@
 Summary:	Monitor free space on a file system
 Summary(pl):	ROX-FreeFS monitoruje ilo¶æ wolnej przestrzeni na dysku
 Name:		rox-%{_name}
-Version:	2.1.2
+Version:	2.1.3
 Release:	1
 License:	GPL v2
 Group:		X11/Applications
 Source0:	http://www.kerofin.demon.co.uk/rox/%{_name}-%{version}.tar.gz
-# Source0-md5:	ab97f73379d416079480137dd6b7ec00
+# Source0-md5:	bffcc4eea508e2bee7ad04bc6882b6c3
 Source1:	%{name}.desktop
-#Patch0:		%{name}-paths-fix.patch
+#Patch0:	%{name}-paths-fix.patch
 Patch1:		%{name}-ROX-CLib2-include.patch
 Patch2:		%{name}-ROX-apps-paths.patch
 Patch3:		%{name}-aclocal.patch
 Patch4:		%{name}-Choices-dir.patch
 URL:		http://www.kerofin.demon.co.uk/rox/freefs.html
 BuildRequires:	autoconf
-BuildRequires:	glib2-devel >= 2.0.1
+BuildRequires:	glib2-devel >= 2.0.3
 BuildRequires:	gtk+2-devel >= 2.0.1
 BuildRequires:	libgtop-devel >= 2.0.0
 BuildRequires:	libxml2-devel >= 2.4.0
@@ -67,7 +67,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc Help/{Changes,README,Versions}
+%doc Help/{Changes,Versions}
 %attr(755,root,root) %{_appsdir}/%{_name}/*[Rr]un
 %attr(755,root,root) %{_appsdir}/%{_name}/choice_install
 %attr(755,root,root) %{_appsdir}/%{_name}/%{_platform}
