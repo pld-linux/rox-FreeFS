@@ -2,7 +2,7 @@
 Name=ROX-FreeFS
 Comment=ROX-FreeFS displays free space on a file system
 Comment[pl]=ROX-FreeFS wywietla ilość wolnej przestrzeni na dysku
-Exec=/usr/lib/ROX-apps/FreeFS/AppRun
+Exec=/usr/lib/rox/FreeFS/AppRun
 Icon=rox-FreeFS.png
 Terminal=false
 Type=Application
