@@ -1,7 +1,7 @@
 %define _name FreeFS
 %define _platform %(echo `uname -s`-`uname -m|sed 's/i.86/ix86/'`)
 Summary:	Monitor free space on a file system
-Summary(pl.UTF-8):   ROX-FreeFS monitoruje ilość wolnej przestrzeni na dysku
+Summary(pl.UTF-8):	ROX-FreeFS monitoruje ilość wolnej przestrzeni na dysku
 Name:		rox-%{_name}
 Version:	2.1.3
 Release:	2
